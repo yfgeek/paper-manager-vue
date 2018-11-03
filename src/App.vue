@@ -1,9 +1,6 @@
 <template>
   <div id="app">
     <img src="./assets/logo.png">
-    <div>
-      <el-button>el-button</el-button>
-    </div>
     <PaperTable />
   </div>
 </template>

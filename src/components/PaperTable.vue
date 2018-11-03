@@ -1,40 +1,52 @@
 <template>
     <el-table
-            :data="tableData"
+            :data="papers"
+            stripe
+            border
             style="width: 100%">
+        <el-table-column
+                type="index"
+        >
+        </el-table-column>
         <el-table-column
                 prop="paper_name"
                 label="文章名称"
-                width="600"
+                sortable
         >
         </el-table-column>
         <el-table-column
                 prop="paper_author"
                 label="作者"
-                sortable
-                width="300">
+                sortable>
         </el-table-column>
         <el-table-column
                 prop="paper_date"
                 label="年份"
+                width="80"
                 sortable
         >
         </el-table-column>
         <el-table-column
                 prop="paper_journal"
                 label="期刊"
+                width="150"
+                sortable
         >
         </el-table-column>
         <el-table-column
                 prop="paper_catalog"
                 label="分类"
-                :filters="[{ text: '分类1', value: '分类1' }, { text: '分类2', value: '分类2' }, { text: '分类3', value: '分类3' }]"
+                :filters="generateTags()"
                 :filter-method="filterTag"
-                filter-placement="bottom-end">
+                filter-placement="bottom-end"
+                width="200"
+        >
             <template slot-scope="scope">
-                <el-tag
-                        :type="scope.row.tag === '分类1' ? 'primary' : 'success'"
-                        disable-transitions>{{scope.row.paper_catalog}}
+                <el-tag v-for="item in scope.row.paper_catalog_generated" :key="item"
+                        type="primary"
+                        style="margin:0 5px 5px 0"
+                        disable-transitions>
+                    {{item}}
                 </el-tag>
             </template>
         </el-table-column>
@@ -42,26 +54,28 @@
 </template>
 
 <script>
-    import {DATABASE} from '../data/data'
-
     export default {
         name: 'PaperTable',
         data() {
             return {
-                tableData: DATABASE
+                papers: this.$store.getters.papers,
+                catalogs: this.$store.getters.catalogs,
             }
         },
+        created() {
+        },
         methods: {
-            formatter(row, column) {
-                return row.address;
+            generateTags() {
+                return Array.from(this.$data.catalogs, (item) => {
+                    let tmp = [];
+                    tmp.value = item;
+                    tmp.text = item;
+                    return tmp;
+                });
             },
             filterTag(value, row) {
-                return row.tag === value;
+                return row.paper_catalog_generated.indexOf(value) > -1;
             },
-            filterHandler(value, row, column) {
-                const property = column['property'];
-                return row[property] === value;
-            }
         }
     }
 </script>

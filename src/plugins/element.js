@@ -1,8 +1,7 @@
-import Vue from 'vue'
-import { Button, Table, TableColumn, Tag } from 'element-ui'
+import Vue from 'vue';
+import {Table, TableColumn, Tag, Scrollbar} from 'element-ui';
 
-Vue.use(Button)
-Vue.use(Table)
-Vue.use(TableColumn)
-Vue.use(Tag)
-
+Vue.use(Table);
+Vue.use(TableColumn);
+Vue.use(Tag);
+Vue.use(Scrollbar);
