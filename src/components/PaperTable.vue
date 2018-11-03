@@ -14,6 +14,9 @@
                     label="文章名称"
                     sortable
             >
+                <template slot-scope="scope">
+                    <a class="paper_link" :href="scope.row.paper_link" target="_blank">{{ scope.row.paper_name }}</a>
+                </template>
             </el-table-column>
             <el-table-column
                     prop="paper_author"
@@ -61,7 +64,7 @@
                 layout="total, sizes, prev, pager, next, jumper"
                 :total="totalItems"
                 style="margin-top:20px;"
-                >
+        >
         </el-pagination>
     </div>
 </template>
@@ -126,5 +129,12 @@
 </script>
 
 <style scoped>
+    .paper_link {
+        color: #192545;
+        text-decoration: none;
+    }
+    .paper_link:hover{
+        color: #0766d1;
 
+    }
 </style>

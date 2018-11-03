@@ -5,6 +5,7 @@ export const DATABASE =[{
     paper_date: '2017', // 这个日期格式要统一
     paper_journal: 'IEEE',
     paper_catalog: 'Blockchain',  // 如果多个数据，需要用 , 隔开， 分类不存在空格
+    paper_link: 'https://ieeexplore.ieee.org/document/7943309/',
 }, {
     id: 1,
     paper_name: 'A taxonomy of blockchain-based systems for architecture design',
@@ -12,138 +13,38 @@ export const DATABASE =[{
     paper_date: '2017', // 这个日期格式要统一
     paper_journal: 'IEEE',
     paper_catalog: 'Blockchain',  // 如果多个数据，需要用 , 隔开
+    paper_link: 'https://ieeexplore.ieee.org/document/7943309/',
 }, {
     id: 2,
     paper_name: 'Double-spending fast payments in bitcoin',
     paper_author: 'Karame, Ghassan O and Androulaki, Elli and Capkun, Srdjan',
     paper_date: '2012', // 这个日期格式要统一
     paper_journal: 'ACM',
-    paper_catalog: 'Bitcoin,Blockchain,ABC',  // 如果多个数据，需要用 , 隔开
+    paper_catalog: 'Bitcoin,Blockchain',  // 如果多个数据，需要用 , 隔开
+    paper_link: 'https://ieeexplore.ieee.org/document/7943309/',
 },{
     id: 3,
-    paper_name: 'Single-spending fast payments in bitcoin',
-    paper_author: 'David, Ghassan O and Androulaki, Elli and Capkun, Srdjan',
-    paper_date: '2009', // 这个日期格式要统一
+    paper_name: 'Double-spending fast payments in bitcoin',
+    paper_author: 'Karame, Ghassan O and Androulaki, Elli and Capkun, Srdjan',
+    paper_date: '2015', // 这个日期格式要统一
     paper_journal: 'ACM',
-    paper_catalog: 'Bitcoin',  // 如果多个数据，需要用 , 隔开
+    paper_catalog: 'Bitcoin,ABC',  // 如果多个数据，需要用 , 隔开
+    paper_link: 'https://ieeexplore.ieee.org/document/7943309/',
 },{
-    id: 3,
-    paper_name: 'Single-spending fast payments in bitcoin',
-    paper_author: 'David, Ghassan O and Androulaki, Elli and Capkun, Srdjan',
-    paper_date: '2009', // 这个日期格式要统一
+    id: 4,
+    paper_name: 'Payments in bitcoin',
+    paper_author: 'Srdjan',
+    paper_date: '2012', // 这个日期格式要统一
     paper_journal: 'ACM',
-    paper_catalog: 'Bitcoin',  // 如果多个数据，需要用 , 隔开
+    paper_catalog: 'Blockchain,ABC',  // 如果多个数据，需要用 , 隔开
+    paper_link: 'https://ieeexplore.ieee.org/document/7943309/',
 },{
-    id: 3,
-    paper_name: 'Single-spending fast payments in bitcoin',
-    paper_author: 'David, Ghassan O and Androulaki, Elli and Capkun, Srdjan',
-    paper_date: '2009', // 这个日期格式要统一
+    id: 5,
+    paper_name: 'Slow payments in bitcoin',
+    paper_author: 'Elli and Capkun, Srdjan',
+    paper_date: '2000', // 这个日期格式要统一
     paper_journal: 'ACM',
-    paper_catalog: 'Bitcoin',  // 如果多个数据，需要用 , 隔开
-},{
-    id: 3,
-    paper_name: 'Single-spending fast payments in bitcoin',
-    paper_author: 'David, Ghassan O and Androulaki, Elli and Capkun, Srdjan',
-    paper_date: '2009', // 这个日期格式要统一
-    paper_journal: 'ACM',
-    paper_catalog: 'Bitcoin',  // 如果多个数据，需要用 , 隔开
-},{
-    id: 3,
-    paper_name: 'Single-spending fast payments in bitcoin',
-    paper_author: 'David, Ghassan O and Androulaki, Elli and Capkun, Srdjan',
-    paper_date: '2009', // 这个日期格式要统一
-    paper_journal: 'ACM',
-    paper_catalog: 'Bitcoin',  // 如果多个数据，需要用 , 隔开
-},{
-    id: 3,
-    paper_name: 'Single-spending fast payments in bitcoin',
-    paper_author: 'David, Ghassan O and Androulaki, Elli and Capkun, Srdjan',
-    paper_date: '2009', // 这个日期格式要统一
-    paper_journal: 'ACM',
-    paper_catalog: 'Bitcoin',  // 如果多个数据，需要用 , 隔开
-},{
-    id: 3,
-    paper_name: 'Single-spending fast payments in bitcoin',
-    paper_author: 'David, Ghassan O and Androulaki, Elli and Capkun, Srdjan',
-    paper_date: '2009', // 这个日期格式要统一
-    paper_journal: 'ACM',
-    paper_catalog: 'Bitcoin',  // 如果多个数据，需要用 , 隔开
-},{
-    id: 3,
-    paper_name: 'Single-spending fast payments in bitcoin',
-    paper_author: 'David, Ghassan O and Androulaki, Elli and Capkun, Srdjan',
-    paper_date: '2009', // 这个日期格式要统一
-    paper_journal: 'ACM',
-    paper_catalog: 'Bitcoin',  // 如果多个数据，需要用 , 隔开
-},{
-    id: 3,
-    paper_name: 'Single-spending fast payments in bitcoin',
-    paper_author: 'David, Ghassan O and Androulaki, Elli and Capkun, Srdjan',
-    paper_date: '2009', // 这个日期格式要统一
-    paper_journal: 'ACM',
-    paper_catalog: 'Bitcoin',  // 如果多个数据，需要用 , 隔开
-},{
-    id: 3,
-    paper_name: 'Single-spending fast payments in bitcoin',
-    paper_author: 'David, Ghassan O and Androulaki, Elli and Capkun, Srdjan',
-    paper_date: '2009', // 这个日期格式要统一
-    paper_journal: 'ACM',
-    paper_catalog: 'Bitcoin',  // 如果多个数据，需要用 , 隔开
-},{
-    id: 3,
-    paper_name: 'Single-spending fast payments in bitcoin',
-    paper_author: 'David, Ghassan O and Androulaki, Elli and Capkun, Srdjan',
-    paper_date: '2009', // 这个日期格式要统一
-    paper_journal: 'ACM',
-    paper_catalog: 'Bitcoin',  // 如果多个数据，需要用 , 隔开
-},{
-    id: 3,
-    paper_name: 'Single-spending fast payments in bitcoin',
-    paper_author: 'David, Ghassan O and Androulaki, Elli and Capkun, Srdjan',
-    paper_date: '2009', // 这个日期格式要统一
-    paper_journal: 'ACM',
-    paper_catalog: 'Bitcoin',  // 如果多个数据，需要用 , 隔开
-},{
-    id: 3,
-    paper_name: 'Single-spending fast payments in bitcoin',
-    paper_author: 'David, Ghassan O and Androulaki, Elli and Capkun, Srdjan',
-    paper_date: '2009', // 这个日期格式要统一
-    paper_journal: 'ACM',
-    paper_catalog: 'Bitcoin',  // 如果多个数据，需要用 , 隔开
-},{
-    id: 3,
-    paper_name: 'Single-spending fast payments in bitcoin',
-    paper_author: 'David, Ghassan O and Androulaki, Elli and Capkun, Srdjan',
-    paper_date: '2009', // 这个日期格式要统一
-    paper_journal: 'ACM',
-    paper_catalog: 'Bitcoin',  // 如果多个数据，需要用 , 隔开
-},{
-    id: 3,
-    paper_name: 'Single-spending fast payments in bitcoin',
-    paper_author: 'David, Ghassan O and Androulaki, Elli and Capkun, Srdjan',
-    paper_date: '2009', // 这个日期格式要统一
-    paper_journal: 'ACM',
-    paper_catalog: 'Bitcoin',  // 如果多个数据，需要用 , 隔开
-},{
-    id: 3,
-    paper_name: 'Single-spending fast payments in bitcoin',
-    paper_author: 'David, Ghassan O and Androulaki, Elli and Capkun, Srdjan',
-    paper_date: '2009', // 这个日期格式要统一
-    paper_journal: 'ACM',
-    paper_catalog: 'Bitcoin',  // 如果多个数据，需要用 , 隔开
-},{
-    id: 3,
-    paper_name: 'Single-spending fast payments in bitcoin',
-    paper_author: 'David, Ghassan O and Androulaki, Elli and Capkun, Srdjan',
-    paper_date: '2009', // 这个日期格式要统一
-    paper_journal: 'ACM',
-    paper_catalog: 'Bitcoin',  // 如果多个数据，需要用 , 隔开
-},{
-    id: 3,
-    paper_name: 'Single-spending fast payments in bitcoin',
-    paper_author: 'David, Ghassan O and Androulaki, Elli and Capkun, Srdjan',
-    paper_date: '2009', // 这个日期格式要统一
-    paper_journal: 'ACM',
-    paper_catalog: 'Bitcoin',  // 如果多个数据，需要用 , 隔开
+    paper_catalog: 'ABC',  // 如果多个数据，需要用 , 隔开
+    paper_link: 'https://ieeexplore.ieee.org/document/7943309/',
 },
 ];
