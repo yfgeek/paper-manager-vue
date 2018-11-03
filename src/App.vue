@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png" style="width:500px; margin-top: 20px; margin-bottom: 20px">
+    <img src="./assets/logo.jpg" style="height:300px; margin-top: 20px; margin-bottom: 20px">
     <PaperTable />
   </div>
 </template>
